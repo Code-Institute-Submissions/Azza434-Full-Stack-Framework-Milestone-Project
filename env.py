@@ -14,8 +14,8 @@ os.environ.setdefault(
     "SECRET_KEY", "j_xiftw5#idnjt$f2dhfe_xu0p-$xa2rlzh^c9mi58htrw2$1_"
 )
 os.environ.setdefault(
-    "AWS_ACCESS_KEY_ID" ,"AKIAWU3KJDPDOEGCWJUP"
+    "AWS_ACCESS_KEY_ID" ,"AKIAWU3KJDPDAKVVX5VX"
 )
 os.environ.setdefault(
-    "AWS_SECRET_ACCESS_KEY" ,"V8UHLLQGqY8ugsZbv/jpR9VgZphbdGApXWgNXcMJ"
+    "AWS_SECRET_ACCESS_KEY" ,"BMJVxrlUhTc6MFGctTGgJ+BwFVSdauWunmMdr4HU"
 )
