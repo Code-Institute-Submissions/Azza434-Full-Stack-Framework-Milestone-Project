@@ -1,4 +1,3 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
 [![Build Status](https://travis-ci.com/Azza434/Full-Stack-Framework-Milestone-Project.svg?branch=master)](https://travis-ci.com/Azza434/Full-Stack-Framework-Milestone-Project)
 
 Welcome Azza434,
