@@ -46,7 +46,7 @@ In this section, you should mention all of the languages, frameworks, libraries,
 - [AWS](https://aws.amazon.com/)
     - This project uses **AWS** for storage and it's database
 - [Heroku](https://dashboard.heroku.com/apps)
-    - This project is deployed on **Heroku**
+    - This project is deployed on **Heroku** [Here](https://ark-websites.herokuapp.com/)
 
 
 ## Testing
@@ -86,4 +86,4 @@ In addition, if it is not obvious, you should also describe how to run your code
 - The photos used in this site were obtained from my old projects
 
 ### Acknowledgements
-- I received inspiration for this project from X
+- I received inspiration for this project from all my projects leading up to this one
