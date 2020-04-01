@@ -15,7 +15,8 @@ In particular, as part of this section we recommend that you provide a list of U
 - As a user type, I want to perform an action, so that I can achieve a goal.
 
 This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
-
+![Wireframe 1](https://github.com/Azza434/Full-Stack-Framework-Milestone-Project/blob/master/wireframes/Wireframe%201.png)
+![Wireframe 2](https://github.com/Azza434/Full-Stack-Framework-Milestone-Project/blob/master/wireframes/Wireframe%202.png)
 ## Features
 
 In this section, you should go over the different parts of your project, and describe each in a sentence or so.
@@ -55,6 +56,9 @@ Website tested across multiple devices.
 - iPad and iPad Pro
 - Pixel 2 and Pixel 2 XL
 - Samsung Galaxy S5
+
+![iPhone](https://github.com/Azza434/Full-Stack-Framework-Milestone-Project/blob/master/wireframes/Iphone%205.png)
+![iPod](https://github.com/Azza434/Full-Stack-Framework-Milestone-Project/blob/master/wireframes/iPad.png)
 
 ## Deployment
 In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
