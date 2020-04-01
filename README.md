@@ -1,9 +1,11 @@
 [![Build Status](https://travis-ci.com/Azza434/Full-Stack-Framework-Milestone-Project.svg?branch=master)](https://travis-ci.com/Azza434/Full-Stack-Framework-Milestone-Project)
-# ARK Websites
+# **ARK Websites**
 
-One or two paragraphs providing an overview of your project.
+Ark is a Full Stack Django Website for selling websites, it comes packed with a Profile page for you to check out your account
+a Contact Us page where you can complete a form with any questions you might have, and even an about page where you can read
+all about who we are.
 
-Essentially, this part is your sales pitch.
+More importantly it has Websites for sale,A Cart and a Checkout application!
  
 ## UX
  
@@ -19,64 +21,65 @@ This section is also where you would share links to any wireframes, mockups, dia
 In this section, you should go over the different parts of your project, and describe each in a sentence or so.
  
 ### Existing Features
-- Feature 1 - allows users X to achieve Y, by having them fill out Z
-- ...
-
-For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
-
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
+- Feature 1 - Contact Us App | The Contact Us App allows the customer to contact the owner of the website via them filling out an email form.
+- Feature 2 - Profile App | The Profile App allows the customer to view their account details,I.E. Full Name and Email.
 
 ### Features Left to Implement
-- Another feature idea
+- Adding and Changing Items for sale via the items page
+- Add more content for the end user to see on their Profile page
 
 ## Technologies Used
 
 In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
 
-- [JQuery](https://jquery.com)
-    - The project uses **JQuery** to simplify DOM manipulation.
+- [Python](https://www.python.org/)
+    - This project is coded in **Python**
+- [Django](https://www.djangoproject.com/)
+    - The framework used in this project is **Django**
+- [Bootswatch](https://bootswatch.com/)
+    - The theme for this project is from **Bootswatch**
+- [Bootstrap](https://getbootstrap.com/docs/3.3/)
+    - Additional styling used ub this project is from **Bootstrap**
+- [Stripe](https://stripe.com/gb)
+    - **Stripe** is used to handle payments used in this project
+- [AWS](https://aws.amazon.com/)
+    - This project uses **AWS** for storage and it's database
+- [Heroku](https://dashboard.heroku.com/apps)
+    - This project is deployed on **Heroku**
 
 
 ## Testing
-
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
-
-Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
-
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
-
-1. Contact form:
-    1. Go to the "Contact Us" page
-    2. Try to submit the empty form and verify that an error message about the required fields appears
-    3. Try to submit the form with an invalid email address and verify that a relevant error message appears
-    4. Try to submit the form with all inputs valid and verify that a success message appears.
-
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
-
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
-
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
+Website tested across multiple devices.
+- Chrome,Mozila, and Firefox
+- iPhone 5 to iPhone X
+- iPad and iPad Pro
+- Pixel 2 and Pixel 2 XL
+- Samsung Galaxy S5
 
 ## Deployment
-
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
-
 In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
-- Different values for environment variables (Heroku Config Vars)?
-- Different configuration files?
-- Separate git branch?
+- Heroku Config Vars
+    - AWS_ACCESS_KEY_ID
+    - AWS_SECRET_ACCESS_KEY
+    - DATABASE_URL
+    - DISABLE_COLLECTSTATIC
+    - SECRET_KEY
+    - STRIPE_PUBLISHABLE
+    - STRIPE_SECRET
 
 In addition, if it is not obvious, you should also describe how to run your code locally.
-
+- Open this project in Gitpod
+    - Type in the Terminal **python3 manage.py runserver**
+    - You will be promted with a window saying *A service is available on port 8000* Click **Open Browser**
+    - You can then register and login
 
 ## Credits
 
 ### Content
-- The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
+- The text used is Lorem Ipsum
 
 ### Media
-- The photos used in this site were obtained from ...
+- The photos used in this site were obtained from my old projects
 
 ### Acknowledgements
-
 - I received inspiration for this project from X

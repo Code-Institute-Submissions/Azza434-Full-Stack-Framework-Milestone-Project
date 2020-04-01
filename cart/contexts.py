@@ -19,4 +19,7 @@ def cart_contents(request):
         website_count += quantity
         cart_items.append({'id': id, 'quantity': quantity, 'website': website})
 
-    return {'cart_items': cart_items, 'total': total, 'website_count': website_count}
+    return {
+        'cart_items': cart_items,
+        'total': total, 'website_count': website_count
+        }
