@@ -6,43 +6,43 @@
 	<div class="container">
 		<div class="row">
 			<h1 class="my-6">{{ website.name }}</h1>
-            <div class="col-md-1"></div>
+			<div class="col-md-1"></div>
 			<div class="col-md-10">
-                <img class="responsive" src="{{ MEDIA_URL }}{{ website.image }}"/>
+				<img class="responsive" src="{{ MEDIA_URL }}{{ website.image }}"/>
 			</div>
-            <div class="col-md-1"></div>
-			<div class="col-md-4">
-				<h2 class="my-3">Website Description</h2>
-				<p>{{ website.description }}</p>
-				<h3 class="my-3">Website Details</h3>
-				<ul>
-					<li>{{ website.details }}</li>
-                    <li>{{ website.details2 }}</li>
-                    <li>{{ website.details3 }}</li>
-                    <li>{{ website.details4 }}</li>
-				</ul>
+				<div class="col-md-1"></div>
+				<div class="col-md-4">
+					<h2 class="my-3">Website Description</h2>
+					<p>{{ website.description }}</p>
+					<h3 class="my-3">Website Details</h3>
+					<ul>
+						<li>{{ website.details }}</li>
+						<li>{{ website.details2 }}</li>
+						<li>{{ website.details3 }}</li>
+						<li>{{ website.details4 }}</li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<h2>£ {{ website.price }}</h2>
+				</div>
 			</div>
-            <div class="col-md-4">
-                <h2>£ {{ website.price }}</h2>
-            </div>
-		</div>
-        <div class="row">
-            <div class="col-md-6"></div>
-            <div class="col-md-6">
-                <form method="POST" action="{% url 'add_to_cart' website.id %}">
-                    {% csrf_token %}
-                    <div class="input-group">
-                        <input name="quantity" type="number" min="1" max="999" class="form-control" placeholder="Quantity" value="1">
-                        <span class="input-group-btn">
+			<div class="row">
+				<div class="col-md-6"></div>
+				<div class="col-md-6">
+					<form method="POST" action="{% url 'add_to_cart' website.id %}">
+						{% csrf_token %}
+						<div class="input-group">
+							<input name="quantity" type="number" min="1" max="999" class="form-control" placeholder="Quantity" value="1">
+							<span class="input-group-btn">
                             <button class="btn btn-primary" type="submit">Add</button>
                         </span>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <br>
-        <br>
+						</div>
+					</form>
+				</div>
+			</div>
+			<br>
+			<br>
 	</div>
-</div>
-{% endfor %}
-{% endblock %}
+		</div>
+		{% endfor %}
+		{% endblock %}
