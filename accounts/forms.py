@@ -21,6 +21,9 @@ class UserRegistrationForm(UserCreationForm):
         fields = ['username', 'email', 'password1', 'password2']
 
     def clean_email(self):
+        """
+        Check to see if the email address used is unique
+        """
         email = self.cleaned_data.get('email')
         username = self.cleaned_data.get('username')
         if User.objects.filter(email=email).exclude(username=username):
@@ -28,6 +31,9 @@ class UserRegistrationForm(UserCreationForm):
         return email
 
     def clean_password2(self):
+        """
+        Check to see if password has been entered and matches
+        """
         password1 = self.cleaned_data.get('password1')
         password2 = self.cleaned_data.get('password2')
 
