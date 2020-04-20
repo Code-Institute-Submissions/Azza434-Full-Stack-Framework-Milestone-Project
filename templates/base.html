@@ -6,15 +6,15 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{% block page_title %}Ark Websites{% endblock %}</title>
+	<title>{% block page_title %}Ark Websites{% endblock %}</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/slate/bootstrap.min.css">
-    <link rel="stylesheet" href="{% static 'font-awesome/css/font-awesome.min.css' %}">
+	<link rel="stylesheet" href="{% static 'font-awesome/css/font-awesome.min.css' %}">
 	<link rel="stylesheet" href="{% static 'css/custom.css' %}">
-    <link href="https://fonts.googleapis.com/css?family=Arima+Madurai&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Arima+Madurai&display=swap" rel="stylesheet">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    {% block head_js %}
-    {% endblock head_js %}
+	{% block head_js %}
+	{% endblock head_js %}
 </head>
 
 <body>
@@ -29,11 +29,11 @@
                     <span class="icon-bar"></span>
                 </button>
 				<a class="navbar-brand" href="/">⛴ ARK Websites</a>
-                {% if user.is_authenticated %}
-                <p class="navbar-text">Signed in as {{ user.username }}</p>
-                {%  else %}
-                <p class="navbar-text"> </p>
-                {% endif %}
+				{% if user.is_authenticated %}
+				<p class="navbar-text">Signed in as {{ user.username }}</p>
+				{%  else %}
+				<p class="navbar-text"> </p>
+				{% endif %}
 			</div>
 			<div id="navbar" class="navbar-collapse collapse">
 				<ul class="nav navbar-nav navbar-right">
@@ -44,21 +44,22 @@
 					<li><a href="{% url 'login' %}"><i class="fa fa-sign-in"></i> Log In</a></li>
 					<li><a href="{% url 'register' %}"><i class="fa fa-user-plus"></i> Register</a></li>
 					{% endif %}
-                    <li><a href="{% url 'contact_page' %}"><i class="fa fa-phone"></i> Contact Us</a></li>
-                    <li><a href="{% url 'about_page' %}"><i class="fa fa-users"></i> About</a></li>
-                    <li>
-                        <a href="{% url 'view_cart' %}">
-                            <i class="fa fa-shopping-cart"></i> Cart
-                            {% if website_count > 0 %}
-                            <label class="badge badge-warning">{{ website_count }}</label>
-                            {% endif %}
-                        </a>
-                    </li>
+					<li><a href="{% url 'contact_page' %}"><i class="fa fa-phone"></i> Contact Us</a></li>
+					<li><a href="{% url 'about_page' %}"><i class="fa fa-users"></i> About</a></li>
+					<li>
+						<a href="{% url 'view_cart' %}">
+							<i class="fa fa-shopping-cart"></i> Cart
+							{% if website_count > 0 %}
+							<label class="badge badge-warning">{{ website_count }}</label>
+							{% endif %}
+						</a>
+					</li>
 				</ul>
-                <form class="form-inline my-2 my-lg-0" action="{% url 'search' %}" method="GET" style="margin-top: 5px;">
-                    <input class="form-control mr-sm-2" type="text" name="q" placeholder="Search">
-                    <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
-                </form>
+				<form class="form-inline my-2 my-lg-0" action="{% url 'search' %}" method="GET"
+					style="margin-top: 5px;">
+					<input class="form-control mr-sm-2" type="text" name="q" placeholder="Search">
+					<button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+				</form>
 			</div>
 		</div>
 	</nav>
@@ -75,6 +76,7 @@
 		{% block content %} {% endblock %}
 	</div>
 	<br>
+    <!-- Footer -->
 	<footer class="bg-light py-5">
 		<div class="container">
 			<div class="medium text-center text-muted">Copyright © 2020 - Aaron Dwyer</div>
