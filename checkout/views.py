@@ -14,6 +14,9 @@ stripe.api_key = settings.STRIPE_SECRET
 
 @login_required()
 def checkout(request):
+    """
+    A view that creates a checkout
+    """
     if request.method == "POST":
         order_form = OrderForm(request.POST)
         payment_form = MakePaymentForm(request.POST)
@@ -55,7 +58,7 @@ def checkout(request):
             print(payment_form.errors)
             messages.error(
                 request, "We were unable to take a payment with that card!"
-                )
+            )
     else:
         payment_form = MakePaymentForm()
         order_form = OrderForm()
@@ -64,4 +67,4 @@ def checkout(request):
         request, "checkout.html", {
             "order_form": order_form, "payment_form": payment_form,
             "publishable": settings.STRIPE_PUBLISHABLE
-            })
+        })
