@@ -2,6 +2,9 @@ from django.db import models
 
 
 class Website(models.Model):
+    """
+    Website model
+    """
     name = models.CharField(max_length=254, default='')
     description = models.TextField()
     details = models.TextField(blank=True)
